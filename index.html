@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aura — Kinetic Scroll & Creative Engineering Showcase</title>
+    <meta name="description" content="Award-winning smooth kinetic scrolling, parallax velocity, and interactive developer showcase." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Top Scroll Progress Bar -->
+    <div id="scrollProgressBar" class="scroll-progress-bar"></div>
+
+    <!-- Navigation Header -->
+    <nav class="nav-bar">
+      <div class="nav-brand">AURA <span class="dim">// 2026</span></div>
+      <div class="nav-metrics">
+        <span class="metric-pill">
+          <span class="live-dot"></span>
+          VELOCITY: <span id="velocityVal" class="mono-nums">0</span> PX/S
+        </span>
+      </div>
+      <div class="nav-links">
+        <a href="#parallaxSection">Parallax</a>
+        <a href="#pinnedSection">Experience</a>
+        <a href="#terminalSection">Terminal</a>
+        <a href="https://github.com/Shahar-Yar095" target="_blank" class="nav-btn">GitHub</a>
+      </div>
+    </nav>
+
+    <!-- 1. Hero Kinetic Section -->
+    <header class="hero-section">
+      <div class="hero-tag">ENGINEERING × CREATIVE MOTION</div>
+      <h1 class="hero-title">
+        KINETIC<br/>
+        <span class="gradient-text">ARCHITECTURE</span>
+      </h1>
+      <p class="hero-subtitle">
+        High-frequency web experiences engineered with GPU-accelerated transforms, sub-frame parallax, and zero animation bloat.
+      </p>
+
+      <div class="scroll-down-hint">
+        <div class="mouse-icon">
+          <div class="wheel"></div>
+        </div>
+        <span>SCROLL TO EXPLORE</span>
+      </div>
+    </header>
+
+    <!-- 2. Parallax Depth Grid -->
+    <section id="parallaxSection" class="section-container">
+      <div class="section-header">
+        <span class="eyebrow">// 01 PARALLAX MATRIX</span>
+        <h2 class="section-title">Multi-Layered Spatial Dimensions</h2>
+      </div>
+
+      <div class="parallax-grid">
+        <div class="parallax-card speed-slow" data-speed="0.1">
+          <div class="card-icon">⚡</div>
+          <span class="card-num">MOD_01</span>
+          <h3>Sub-Millisecond Telemetry</h3>
+          <p>Real-time distributed metrics streaming with zero thread contention and sub-50ms roundtrip delivery.</p>
+          <div class="card-stat mono-nums">LATENCY &lt; 18ms</div>
+        </div>
+
+        <div class="parallax-card speed-normal" data-speed="0.25">
+          <div class="card-icon">🧠</div>
+          <span class="card-num">MOD_02</span>
+          <h3>Autonomous RAG Search</h3>
+          <p>Contextual semantic embeddings and high-dimensional cosine similarity indexing across enterprise docs.</p>
+          <div class="card-stat mono-nums">MATCH CONFIDENCE 99.4%</div>
+        </div>
+
+        <div class="parallax-card speed-fast" data-speed="0.45">
+          <div class="card-icon">🛡️</div>
+          <span class="card-num">MOD_03</span>
+          <h3>Verified Byte Streaming</h3>
+          <p>Hardware-accelerated raw data pipelines with strict hash and size verification before destructive operations.</p>
+          <div class="card-stat mono-nums">THROUGHPUT 100 MB/s</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Pinned Split-Screen Story Section -->
+    <section id="pinnedSection" class="pinned-showcase">
+      <div class="pinned-left">
+        <div class="sticky-content">
+          <span class="eyebrow">// 02 PINNED REVEALS</span>
+          <h2 class="pinned-headline" id="pinnedTitle">Genesis &amp; Concept</h2>
+          <p id="pinnedDesc" class="pinned-description">
+            Building software at the intersection of extreme speed, mathematical rigor, and aesthetic excellence.
+          </p>
+          <div class="step-indicator">
+            <span class="step-item active" data-step="1">01 FOUNDATION</span>
+            <span class="step-item" data-step="2">02 CONCURRENCY</span>
+            <span class="step-item" data-step="3">03 VELOCITY</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pinned-right">
+        <div class="scroll-story-block" data-step-id="1">
+          <div class="story-card">
+            <h4>Precision Engineering</h4>
+            <p>Every pixel and packet is tuned for immediate physical responsiveness. We eliminate artificial layout thrashing and keep memory allocations lean.</p>
+            <div class="code-pill mono-nums">requestAnimationFrame(renderLoop)</div>
+          </div>
+        </div>
+
+        <div class="scroll-story-block" data-step-id="2">
+          <div class="story-card">
+            <h4>Priority Concurrency</h4>
+            <p>Background job scheduling, non-blocking I/O workers, and resilient retry mechanisms maintain 99.9% uptime under massive burst loads.</p>
+            <div class="code-pill mono-nums">JobQueue.dispatch({ priority: 'CRITICAL' })</div>
+          </div>
+        </div>
+
+        <div class="scroll-story-block" data-step-id="3">
+          <div class="story-card">
+            <h4>Native Hardware Acceleration</h4>
+            <p>Bypassing legacy driver bottlenecks by utilizing direct native ADB pipelines and GPU composite layers for fluid 120Hz rendering.</p>
+            <div class="code-pill mono-nums">transform: translate3d(0, y, 0)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Interactive Live Terminal -->
+    <section id="terminalSection" class="section-container">
+      <div class="section-header">
+        <span class="eyebrow">// 03 INTERACTIVE CONSOLE</span>
+        <h2 class="section-title">Developer Command Center</h2>
+      </div>
+
+      <div class="terminal-window">
+        <div class="terminal-bar">
+          <div class="window-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="terminal-title mono-nums">shahar-yar@portfolio:~ (zsh)</span>
+        </div>
+        <div id="terminalBody" class="terminal-body mono-nums">
+          <div class="term-line">Welcome to Aura Interactive CLI v2.6.</div>
+          <div class="term-line text-muted">Type <span class="highlight">'help'</span> to see available commands or click below.</div>
+          <div class="quick-commands">
+            <button class="cmd-btn" data-cmd="skills">skills</button>
+            <button class="cmd-btn" data-cmd="projects">projects</button>
+            <button class="cmd-btn" data-cmd="contact">contact</button>
+            <button class="cmd-btn" data-cmd="clear">clear</button>
+          </div>
+          <div id="termOutput"></div>
+          <div class="term-input-row">
+            <span class="prompt-sym">➜</span>
+            <input type="text" id="termInput" class="term-input" placeholder="type a command..." autocomplete="off" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Footer -->
+    <footer class="footer-section">
+      <div class="footer-content">
+        <h2>READY TO BUILD EXTRAORDINARY SOFTWARE?</h2>
+        <p>Full-Stack Architecture • Autonomous AI Systems • High-Throughput Engineering</p>
+        <div class="footer-actions">
+          <a href="mailto:shaharyar.dev@gmail.com" class="btn btn-primary">Start a Conversation</a>
+          <button id="backToTopBtn" class="btn btn-outline">Back to Top ↑</button>
+        </div>
+      </div>
+      <div class="footer-bottom mono-nums">
+        <span>© 2026 SHAHAR YAR</span>
+        <span>DESIGNED FOR MAXIMUM IMPACT</span>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
